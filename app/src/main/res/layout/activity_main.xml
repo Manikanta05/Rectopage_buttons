@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:background="#0e0f19"
+    tools:context=".MainActivity"
+     android:gravity="center">
+
+
+    <Button
+        android:id="@+id/AlertButton"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#fff"
+        android:padding="3dp"
+        android:background="#0091EA"
+        android:text="Alert Dialog Button"
+        android:textSize="20sp" />
+
+
+    <TextView
+
+        android:id="@+id/AlertTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AlertButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Click Received!"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/ToastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="3dp"
+        android:onClick="onClick"
+        android:text="Toast message button"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/AlertButton"
+        tools:ignore="OnClick" />
+
+
+
+</LinearLayout>
